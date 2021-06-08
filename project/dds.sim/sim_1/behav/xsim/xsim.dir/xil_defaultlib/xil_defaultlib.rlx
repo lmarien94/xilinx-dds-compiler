@@ -1,0 +1,12 @@
+0.6
+2018.2
+Jul 26 2018
+19:36:16
+C:/Users/levim/Desktop/pmodDA3/dds/dds.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sim_1/new/tb_dds_wrapper.vhd,1537533752,vhdl,,,,tb_dds_wrapper,,,,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/ip/dds_clk_wiz_0_1/dds_clk_wiz_0_1.v,1536407502,verilog,,,,dds_clk_wiz_0_1,,,../../../../dds.srcs/sources_1/bd/dds/ipshared/b65a,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/ip/dds_clk_wiz_0_1/dds_clk_wiz_0_1_clk_wiz.v,1536407502,verilog,,C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/ip/dds_clk_wiz_0_1/dds_clk_wiz_0_1.v,,dds_clk_wiz_0_1_clk_wiz,,,../../../../dds.srcs/sources_1/bd/dds/ipshared/b65a,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/ip/dds_dds_compiler_0_0/sim/dds_dds_compiler_0_0.vhd,1536407502,vhdl,,,,dds_dds_compiler_0_0,,,,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/ip/dds_proc_sys_reset_0_0/sim/dds_proc_sys_reset_0_0.vhd,1536407502,vhdl,,,,dds_proc_sys_reset_0_0,,,,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/bd/dds/sim/dds.vhd,1536501257,vhdl,,,,dds,,,,,,,,
+C:/Users/levim/Desktop/pmodDA3/dds/dds.srcs/sources_1/imports/hdl/dds_wrapper.vhd,1536407487,vhdl,,,,dds_wrapper,,,,,,,,

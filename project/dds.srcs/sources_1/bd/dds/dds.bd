@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xDCC1DBF6B3E0F6F9" bd:device="xc7a100tcsg324-1" bd:isValidated="true" bd:synthFlowMode="Hierarchical" bd:tool_version="2018.2.1" bd:top="dds" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>dds</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>RST.RESET</spirit:name>
+        <spirit:displayName>Reset</spirit:displayName>
+        <spirit:description>Reset</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="reset" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="reset_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>RST</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>reset</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>CE.ACLKEN</spirit:name>
+        <spirit:displayName>ClkEnable</spirit:displayName>
+        <spirit:description>Clock Enable</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clockenable" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clockenable_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CE</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>aclken</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>POLARITY</spirit:name>
+            <spirit:value>ACTIVE_LOW</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>CLK.SYS_CLOCK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>sys_clock</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>PHASE</spirit:name>
+            <spirit:value>0.000</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="user"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+          <spirit:parameter>
+            <spirit:name>CLK_DOMAIN</spirit:name>
+            <spirit:value>dds_sys_clock</spirit:value>
+            <spirit:vendorExtensions>
+              <bd:configElementInfos>
+                <bd:configElementInfo bd:valueSource="default"/>
+              </bd:configElementInfos>
+            </spirit:vendorExtensions>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="dds_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>reset</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>aclken</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>m_axis_data_tdata</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>15</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>m_axis_data_tready</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>m_axis_data_tvalid</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>sys_clock</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>dds_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>proc_sys_reset_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="proc_sys_reset" spirit:vendor="xilinx.com" spirit:version="5.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">dds_proc_sys_reset_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="RESET_BOARD_INTERFACE">reset</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>dds_compiler_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="dds_compiler" spirit:vendor="xilinx.com" spirit:version="6.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">dds_dds_compiler_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="DDS_Clock_Rate">10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Parameter_Entry">Hardware_Parameters</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Frequency_Resolution">0.4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Noise_Shaping">None</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Phase_Width">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Output_Width">16</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Output_Selection">Sine</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Has_Phase_Out">false</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Has_TREADY">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="M_DATA_Has_TUSER">Not_Required</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Latency">9</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Has_ARESETn">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Has_ACLKEN">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="Output_Frequency1">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PINC1">0001100110011001</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>clk_wiz_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="clk_wiz" spirit:vendor="xilinx.com" spirit:version="6.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">dds_clk_wiz_0_1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="PRIMITIVE">PLL</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLK_OUT1_PORT">clk_10</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_REQUESTED_OUT_FREQ">10.000</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT2_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT3_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT4_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT5_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT6_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT7_DRIVES">BUFG</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="RESET_PORT">resetn</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_DIVCLK_DIVIDE">5</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKFBOUT_MULT_F">41</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_COMPENSATION">ZHOLD</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="MMCM_CLKOUT0_DIVIDE_F">82</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="RESET_TYPE">ACTIVE_LOW</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="USE_BOARD_FLOW">true</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLK_IN1_BOARD_INTERFACE">sys_clock</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_JITTER">446.763</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="CLKOUT1_PHASE_ERROR">313.282</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>reset_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="reset"/>
+        <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="ext_reset_in"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="resetn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_clk_35</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_10"/>
+        <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="slowest_sync_clk"/>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="aclk"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>proc_sys_reset_0_peripheral_aresetn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="peripheral_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="aresetn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>aclken_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="aclken"/>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="aclken"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dds_compiler_0_m_axis_data_tdata</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="m_axis_data_tdata"/>
+        <spirit:externalPortReference spirit:portRef="m_axis_data_tdata"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>m_axis_data_tready_0_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="m_axis_data_tready"/>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="m_axis_data_tready"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>dds_compiler_0_m_axis_data_tvalid</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="dds_compiler_0" spirit:portRef="m_axis_data_tvalid"/>
+        <spirit:externalPortReference spirit:portRef="m_axis_data_tvalid"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>sys_clock_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="sys_clock"/>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="clk_in1"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>clk_wiz_0_locked</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="clk_wiz_0" spirit:portRef="locked"/>
+        <spirit:internalPortReference spirit:componentRef="proc_sys_reset_0" spirit:portRef="dcm_locked"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_dds_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_dds_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="5457900000fs"></ZoomStartTime>
+      <ZoomEndTime time="18307900001fs"></ZoomEndTime>
+      <Cursor1Time time="21000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="138"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wave_markers>
+      <marker time="13200000000" label="" />
+      <marker time="14200000000" label="" />
+   </wave_markers>
+   <wvobject fp_name="/tb_dds_wrapper/sys_clock" type="logic">
+      <obj_property name="ElementShortName">sys_clock</obj_property>
+      <obj_property name="ObjectShortName">sys_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/dut/dds_i/proc_sys_reset_0/peripheral_aresetn" type="array">
+      <obj_property name="ElementShortName">peripheral_aresetn[0:0]</obj_property>
+      <obj_property name="ObjectShortName">peripheral_aresetn[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/dut/dds_i/clk_wiz_0/clk_10" type="logic">
+      <obj_property name="ElementShortName">clk_10</obj_property>
+      <obj_property name="ObjectShortName">clk_10</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/dut/dds_i/clk_wiz_0/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/aclken" type="logic">
+      <obj_property name="ElementShortName">aclken</obj_property>
+      <obj_property name="ObjectShortName">aclken</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/m_axis_data_tready" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tready</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/m_axis_data_tvalid" type="logic">
+      <obj_property name="ElementShortName">m_axis_data_tvalid</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tvalid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_dds_wrapper/m_axis_data_tdata" type="array">
+      <obj_property name="ElementShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">m_axis_data_tdata[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>
